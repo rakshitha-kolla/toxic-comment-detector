@@ -1,0 +1,11 @@
+# Ignore Python cache and virtual environment
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Ignore credentials
+credentials.json
+
+# Ignore VS Code settings
+.vscode/

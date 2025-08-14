@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toxic Comment Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ Toxic Comment Detector</h1>
+            <p>AI-Powered Content Moderation</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <label for="textInput">Enter text to analyze:</label>
+                <textarea id="textInput" placeholder="Type or paste your text here..." maxlength="1000"></textarea>
+                <div class="char-counter">
+                    <span id="charCount">0</span>/1000 characters
+                </div>
+            </div>
+            
+            <button id="analyzeBtn" class="analyze-btn">🔍 Analyze Text</button>
+            
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing with AI...</p>
+            </div>
+            
+            <div id="results" class="results" style="display: none;">
+                <div class="result-header">
+                    <span id="resultIcon"></span>
+                    <span id="resultTitle"></span>
+                </div>
+                <div id="resultDetails" class="result-details"></div>
+            </div>
+            
+            <div id="error" class="error" style="display: none;"></div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
