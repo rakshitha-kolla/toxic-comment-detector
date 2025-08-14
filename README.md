@@ -19,7 +19,8 @@ A Flask web application that detects toxic comments using Google Cloud Natural L
 
 ## 🚀 Demo
 
-![App Screenshot](https://drive.google.com/file/d/1dydXK1R6Oua47sv3eYoOHRHJl1SOikPn/view?usp=drive_link)
+![App Screenshot](https://raw.githubusercontent.com/rakshitha-kolla/toxic-comment-detector/main/docs/toxic-comment-detection.png
+)
 
 *Replace this with an actual screenshot of your app*
 
